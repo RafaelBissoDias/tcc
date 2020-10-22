@@ -1,2 +1,2 @@
-# Portfolio
-Hospedagem de códigos dos projetos exercidos por mim, afim de mostrar minha atual experiência com linguagens como HTML. ASP.NET e PHP
+# TCC
+Hospedagem de códigos do projeto de TCC exercido por mim, afim de mostrar minha atual experiência com HTML
