@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="icon" type="imagem/png" href="./img/logo.png" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/ca.css">
+<title>Acesso</title>
+</head>
+
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" >Inicio</a>
+  <a href="produto.html">Jogos</a>
+  <a href="consoles.html">Eletrônicos</a>
+  <a href="contato.html">Contatos - Fale conosco</a>
+  <a href="quemsomos.html">Quem somos?</a>
+  <a href="acesso.html" style="float: right;">Login</a>
+  <a href="acesso.html" style="float: right;">
+    <img src="icone/iconecarrinho3.png" style="width: 22px; height: 18px;position: relative; bottom: -3px;">
+  </a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="bannercont">
+      <h1 style="color:white;font-size:5em;font-family: Agency FB;font-weight: 300;"> FALE CONOSCO - CONTATOS </h1>
+  </div>
+
+
+<div id="login-box">
+  <div class="left">
+    <input type="text" name="nome" placeholder="Nome" />
+    <input type="text" name="email" placeholder="E-mail" />
+    <input type="text" name="telefone" placeholder="Telefone" />
+    <textarea type="text" name="mensagem" cols="40" rows="4" placeholder="Mensagem"></textarea> 
+    
+   <a href="login.html"><input type="submit" name="signup_submit" value="Enviar" /></a>
+  </div>
+  
+  <div class="right">
+
+  <a href="https://facebook.com"><button class="social-signin facebook">Facebook</button></a>
+  <a href="https://instagram.com/"><button class="social-signin google">Instagram</button></a>
+  <a href="#"><button class="social-signin"><img src="icone/wpp.png" style="float:left;width:30px;height:30px;margin-left:7px"><p style="color:#000;margin: 5px 35px 0 0">(11) 96485-1652</p></button></a>
+  <a href="#"><button class="social-signin"><img src="icone/tel.png" style="float:left;width:30px;height:30px;margin-left:7px"><p style="color:#000;margin: 5px 35px 0 0">(11) 4615-2536</p></button></a>
+  </div>
+  <div class="or">Ou</div>
+</div>
+<script >
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>

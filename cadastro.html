@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" type="imagem/png" href="./img/logo.png" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+
+
+
+body{
+
+background-color: #181c18;
+color: rgb(69, 161, 130);
+height: 100%;
+background-size: 100%;
+}
+
+#wrapper{
+width: 100%;
+height: 800px;
+}
+
+#title_section{
+border-radius: 2px;
+background-color: #006400;
+color: white;
+margin-top: 2%;
+margin-left: 10%;
+width: 80%;
+
+border: none;
+height: 50px;
+line-height: 50px;
+
+box-shadow: 0px 5px 10px #333;
+
+cursor: pointer;
+}
+
+#content_section{
+  padding: 20px;
+margin-top: 10%;
+height:500px;
+width: 40%;
+margin-left: 30%;
+margin-right: 30%;
+text-align: center;
+border-radius: 2px;
+}
+
+.textbox{
+border: none;
+padding: 8px;
+border-radius: 2px;
+margin-top:10px; 
+width: 80%;
+transition: 0.5s cubic-bezier(0.68, -2, 0.265, 1.55);
+color: rgb(39, 131, 90);
+}
+
+.textbox:focus{
+font-size: 16px;
+
+color: black;
+box-shadow: 0px 5px 10px #666;
+}
+
+#button{
+border-radius: 2px;
+background-color: #006400;
+color: white;
+width: 80%;
+height: 40px;
+margin: 2% 10% 1% 10%;
+box-shadow: 0px 5px 10px #333;
+font-size: 18px;
+cursor: pointer;
+}
+
+#email_label{
+margin-top: -40px;
+position: relative;
+z-index: -1;
+background-color: #000;
+text-align: left;
+padding: 10px;
+border-radius: 30px;
+transition: 0.5s cubic-bezier(0.68, -2, 0.265, 1.55);
+opacity: 0;
+}
+
+#email:focus ~ #email_label{
+margin-left: -120px;
+opacity: 1;
+}
+
+#password_label{
+margin-top: -40px;
+position: relative;
+z-index: -1;
+background-color: #000;
+text-align: left;
+padding: 10px;
+border-radius: 30px;
+transition: 0.5s cubic-bezier(0.68, -2, 0.265, 1.55);
+opacity: 0;
+}
+
+#password:focus ~ #password_label{
+margin-left: -120px;
+opacity: 1;
+}
+
+</style>
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cadastro</title>
+</head>
+
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" >Inicio</a>
+  <a href="produto.html">Jogos</a>
+  <a href="consoles.html">Eletrônicos</a>
+  <a href="contato.html">Contatos - Fale conosco</a>
+  <a href="quemsomos.html">Quem somos?</a>
+  <a href="acesso.html" class="active" style="float: right;">Login</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="bannercd">
+      <h1> CADASTRO </h1>
+    </div>
+
+
+  <script>
+  	function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  </script>
+
+<div id="wrapper">
+
+
+
+<div id="content_section" style="animation: content 1s ease;">
+ 
+<div id="title_section">
+  CADASTRE-SE
+</div>
+<br/>
+<form method="post" action="acesso.html">
+
+<input id="email" class="textbox" type="text" placeHolder="Nome" name="email" style="animation: email 1.5s cubic-bezier(0.68, -2, 0.265, 1.55);"/>
+
+<br/>
+<input id="nome" class="textbox" type="text" placeHolder="Email" name="email" style="animation: email 1.5s cubic-bezier(0.68, -2, 0.265, 1.55);"/>
+<br/>
+<input id="password" class="textbox" type="password" placeHolder="Senha" name="password" style="animation: email 1.5s cubic-bezier(0.68, -2, 0.265, 1.55);"/>
+<br/>
+<input id="telefone" class="textbox" type="telefone" placeHolder="Telefone" name="telefone" style="animation: email 1.5s cubic-bezier(0.68, -2, 0.265, 1.55);"/>
+<br />
+<input id="button" type="submit" value="Cadastrar" style="animation: email 1.s cubic-bezier(0.68, -2, 0.265, 1.55);"/>
+<br/> 
+<p> Já possui um Login? </p>
+<input id="button" type="submit" value="Ir para Login" style="animation: email 1.s cubic-bezier(0.68, -2, 0.265, 1.55);"/>
+
+
+</form>
+</div>
+
+</div>
+
+</body>
+
+</html>
